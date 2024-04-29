@@ -75,7 +75,7 @@ class _HomeScreenState extends State {
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (_) => const Pulses(),
+                  builder: (_) => const Cereals(),
                 ),
               );
             },
@@ -99,7 +99,7 @@ class _HomeScreenState extends State {
                     height: 5,
                   ),
                   Text(
-                    "Pulses",
+                    "Cereals",
                     style: GoogleFonts.poppins(
                       fontSize: 17,
                       fontWeight: FontWeight.w500,

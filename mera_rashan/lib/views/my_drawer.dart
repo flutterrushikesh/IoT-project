@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mera_rashan/views/aboutus_screen.dart';
+import 'package:mera_rashan/views/history_screen.dart';
 import 'package:mera_rashan/views/profile_screen.dart';
 
 class MyDrawer extends StatefulWidget {
@@ -94,7 +96,13 @@ class _MyDrawerState extends State {
                     height: 15,
                   ),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (_) => const History(),
+                        ),
+                      );
+                    },
                     style: const ButtonStyle(
                       minimumSize: MaterialStatePropertyAll(
                         Size(50, 50),
@@ -121,7 +129,13 @@ class _MyDrawerState extends State {
                     height: 20,
                   ),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (_) => const AboutUS(),
+                        ),
+                      );
+                    },
                     style: const ButtonStyle(
                       minimumSize: MaterialStatePropertyAll(
                         Size(50, 50),
